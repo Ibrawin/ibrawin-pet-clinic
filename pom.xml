@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.ibrawin</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.2</version>
     <name>pet-clinic</name>
     <description>pet-clinic</description>
     <properties>
@@ -43,6 +43,10 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
+                    <checkModificationExcludes>
+                        <checkModificationExclude>pom.xml</checkModificationExclude>
+                    </checkModificationExcludes>
                 </configuration>
             </plugin>
         </plugins>
@@ -50,6 +54,6 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:Ibrawin/pet-clinic.git</developerConnection>
-      <tag>HEAD</tag>
+      <tag>pet-clinic-0.0.2</tag>
   </scm>
 </project>
