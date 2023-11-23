@@ -1,13 +1,13 @@
 package com.ibrawin.petclinic.service.map;
 
 import com.ibrawin.petclinic.model.Pet;
-import com.ibrawin.petclinic.service.CrudService;
+import com.ibrawin.petclinic.service.PetService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
 
     @Override
     public Pet findById(Long id) {
